@@ -1,46 +1,22 @@
 package practiceForRep;
 
 import java.util.Scanner;
+class Main{
 
-public class hW2 {
-    public static void main(String[] args) {
-        /*
-Create a program that prompt user with question:  "Do you need a loan?"(Use a boolean)
+    public static void main(String[] args){
 
-If the result is true then prompt user with question: "What is your credit score?". Otherwise eligibility is "Unknown"
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Please input number");
+        int userInput=scanner.nextInt();
 
-Based on the score define users eligibility:
+        for(int i=0;i< (userInput*2); i++){
+            System.out.print(i+" ");
 
-- if score is below  600 --> eligibility = "Not eligible"
-- if score is between 600 and 700 inclusive -->  eligibility = "Maybe eligible"
-- if score is between 701 and 800 inclusive -->  eligibility = "Eligible"
-- if score is higher than any other previous values --> eligibility = "Definitely eligible" .
-```
-         */
-
-
-        boolean loan = true;
-        int loanAmt = 600;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Do you need a loan?");
-        loan = scanner.nextBoolean();
-        System.out.println("Unknown");
-
-        System.out.println("What is your credit score?");
-        loanAmt = scanner.nextInt();
-
-
-            if (loanAmt <= 600) {
-                System.out.println("The eligibility is Not eligible");
-            } else if (loanAmt <= 700) {
-                System.out.println("The eligibility is Maybe eligible");
-            } else if (701 <= 800) {
-                System.out.println("The eligibility is Eligible");
-            } else if (800 > 1000) {
-                System.out.println("The eligibility is Definitely eligible");
-
+            {
+                System.out.println("no output");
             }
         }
 
     }
 
+}
